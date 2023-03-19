@@ -7,6 +7,14 @@ import pandas as pd
 
 #1. Creation of Series
 
+#syntax: <Series Object> = pandas.Series(data, index=idx)
+#where idx is a valid numpy datatype
+#and data can be created using
+#A Python Sequence
+#An ndarray
+#A Python Dictionary
+#A scalar value
+
 #(A) Creation of Series from Scalar Values:
 series1 = pd.Series([10,20,30])
 print(series1)
@@ -54,7 +62,19 @@ print(series8)    #Display the series
 
 #(A) Indexing
 #usage of positional index for accessing a value
+#syntax: <Series Object name>[<valid indexes>]
 seriesNum = pd.Series([10,20,30])
-seriesNum[2]
+seriesNum[2]                         #30
+seriesCapCntry = pd.Series(['NewDelhi', 'WashingtonDC', 'London', 'Paris'],
+index=['India', 'USA', 'UK', 'France'])
+seriesCapCntry[[3,2]]
 
-#30
+#France     Paris
+#UK        London
+#dtype: object
+
+seriesCapCntry[['UK','USA']]
+#UK           London
+#USA    WashingtonDC
+#dtype: object
+
