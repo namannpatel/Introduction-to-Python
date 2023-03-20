@@ -197,5 +197,5 @@ seriesCapCntry.empty
 
 #Create an empty series
 seriesEmpt=pd.Series()
-seriesEmpt.empty
+print(seriesEmpt.empty)
 #True
