@@ -23,6 +23,13 @@ print(series1)
 #1    20
 #2    30
 
+series2 = pd.Series(10, index = ['A', 'B', 'C'])       #indices are must
+print(series2)
+
+#A    10
+#B    10
+#C    10
+
 #(B) Creation of Series from NumPy Arrays
 #We can create a series from a one-dimensional (1D) NumPy array
 import numpy as np      # import NumPy with alias np
@@ -50,8 +57,8 @@ print(series4)
 dict1 = {'India': 'NewDelhi', 'UK': 'London', 'Japan': 'Tokyo'}
 print(dict1)      #Display the dictionary
 #{'India': 'NewDelhi', 'UK': 'London', 'Japan': 'Tokyo'}
-series8 = pd.Series(dict1)
-print(series8)    #Display the series
+series5 = pd.Series(dict1)
+print(series5)    #Display the series
 
 #India    NewDelhi
 #UK         London
